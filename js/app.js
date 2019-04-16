@@ -7,9 +7,10 @@ var validFunc = false;
 do
 {
   // will continue this loop until a valid function has been completed
-  while (!validFunc)
+  while (choice != 1 && choice != 2)
   {
     var choice = prompt("Would you like to use (1)basic functions or (2)advanced functions?");
+  }
     if (choice == 1)
     {
       operand = prompt("Do you want to do (1)addition, (2)subtraction, (3)multiplication or (4)division?");
@@ -21,28 +22,23 @@ do
         case "1":
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         case "2":
           answer = input1 - input2;
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         case "3":
           answer = input1 * input2;
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         case "4":
           answer = input1 / input2;
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         default:
           alert("You did not choose a valid operation so we have gone with addition");
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
       }
     }
     // more advanced functions
@@ -56,27 +52,19 @@ do
           input2 = parseFloat(prompt("Enter your second value")) || 0;
           answer = Math.pow(input1, input2);
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         case "2":
           input1 = parseFloat(prompt("Enter the number you want to square root")) || 0;
           answer = Math.sqrt(input1);
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
           break;
         default:
           alert("You did not choose a valid option so we have gone with sqaure root");
           input1 = parseFloat(prompt("Enter the number you want to square root")) || 0;
           answer = Math.sqrt(input1);
           alert(`The answer to your equation is ${answer}`);
-          validFunc = true;
       }
     }
-    else
-    {
-      alert("That is not a valid option!");
-    }
-  }
 
   var repeat = prompt("Do you want to do another calculation? Yes/No?");
   if (repeat === "No" || "no")
