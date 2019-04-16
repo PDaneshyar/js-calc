@@ -13,40 +13,33 @@ do
     if (choice == 1)
     {
       operand = prompt("Do you want to do (1)addition, (2)subtraction, (3)multiplication or (4)division?");
+      input1 = parseFloat(prompt("Enter your first value"));
+      input2 = parseFloat(prompt("Enter your second value"));
+
       switch (operand)
       {
         case "1":
-          input1 = parseFloat(prompt("Enter your first value"));
-          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "2":
-          input1 = parseFloat(prompt("Enter your first value"));
-          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 - input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "3":
-          input1 = parseFloat(prompt("Enter your first value"));
-          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 * input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "4":
-          input1 = parseFloat(prompt("Enter your first value"));
-          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 / input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         default:
           alert("You did not choose a valid operation so we have gone with addition");
-          input1 = parseFloat(prompt("Enter your first value"));
-          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
