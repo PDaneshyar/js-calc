@@ -1,16 +1,16 @@
 var operand, input1, input2, answer;
 
 var quit = false;
-var validFunc = false;
 
 // will run this loop until the user wants to quit
 do
 {
-  // will continue this loop until a valid function has been completed
+  // will continue this loop until a valid function has been selected
   while (choice != 1 && choice != 2)
   {
     var choice = prompt("Would you like to use (1)basic functions or (2)advanced functions?");
   }
+    // basic functions
     if (choice == 1)
     {
       operand = prompt("Do you want to do (1)addition, (2)subtraction, (3)multiplication or (4)division?");
