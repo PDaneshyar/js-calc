@@ -16,37 +16,37 @@ do
       switch (operand)
       {
         case "1":
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "2":
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 - input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "3":
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 * input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "4":
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 / input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         default:
           alert("You did not choose a valid operation so we have gone with addition");
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = input1 + input2;
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
@@ -59,21 +59,21 @@ do
       switch (operand)
       {
         case "1":
-          input1 = parseInt(prompt("Enter your first value"));
-          input2 = parseInt(prompt("Enter your second value"));
+          input1 = parseFloat(prompt("Enter your first value"));
+          input2 = parseFloat(prompt("Enter your second value"));
           answer = Math.pow(input1, input2);
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         case "2":
-          input1 = parseInt(prompt("Enter the number you want to square root"));
+          input1 = parseFloat(prompt("Enter the number you want to square root"));
           answer = Math.sqrt(input1);
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
           break;
         default:
           alert("You did not choose a valid option so we have gone with sqaure root");
-          input1 = parseInt(prompt("Enter the number you want to square root"));
+          input1 = parseFloat(prompt("Enter the number you want to square root"));
           answer = Math.sqrt(input1);
           alert(`The answer to your equation is ${answer}`);
           validFunc = true;
